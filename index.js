@@ -1,36 +1,36 @@
-console.log(1 === 1);
-//true
-console.log(1 === 2);
-//false
-console.log(3==3);
-//true
-console.log(2==3);
-//false
-console.log(1 == '1');
-//konverterer typene, 1 og ´1´ blir like,true
-console.log(2 === '2');
-//krever lik datatype,false
-    // == sammenligner bare verdi
-    // === sammenlogner begge verdi og datatype
-console.log(1==1 && 2==2);	
-//begge er true	  true
-console.log(1=== '1' && 2===2);
-//første er false, andre er true	false
-console.log(1===1 && '2' === 2);	
-//første true, andre false	false
-console.log(1=='1' && 2==='2');
-//første true, andre er false   false
-console.log(1==='1' || 2===2); 
-//første er false, andre er true  true
-console.log(2=="2" || 1==="1");
-//første er true, andre er false  true
-console.log(2===2 || 1===1 || 3==="3");
-//første er true, andre er true, tredje er false    true
-console.log(1 !== 1);
-//en er like en, så pga "NOT" blir det false
-console.log(2 !== 1);
-//to er ikke lik en så pga "NOT" blir det true
-console.log(2 !== 1 && 1 === 1)
-//to er ikke lik en så pga "NOT" blir det true og den andre er true   true
-console.log(2 !== "2" && 1=== "1" || 2=="2");
-//første er false, andre er false, tredje er true     true
+let ender = [];
+ender[0] = "Donald";
+ender[1] = "Ole";
+ender[2] = "Max";
+ender[3] = "Kevin";
+ender[4] = "Alexander";
+ender[5] = "Jon";
+ender[6] = "Vladimir";
+ender[7] = "Mikkel";
+ender[8] = "Julian";
+ender[9] = "Artem";
+console.log(ender[2]);
+console.log(ender[5]);
+console.log(ender[8]);
+// a) En index er plasseringen til et element i en array.
+
+// b) Første index i en array er 0.
+
+// c) Siste index i en array er array.length - 1.
+
+// d) Lengden på en array viser hvor mange elementer den inneholder.
+
+// e) Sammenhengen mellom lengde og siste index er at lengden alltid er én mer enn siste index.
+
+// Når typeof brukes på en array, returnerer den "object".
+
+//For å sjekke om en variabel er en array i JavaScript, bruker man Array.isArray().
+
+function testArray(argument) {
+  if (Array.isArray(argument)) {
+    console.log("Argumentet er en array");
+  } else {
+    console.log("Argumentet er ikke en array");
+  }
+}
+
