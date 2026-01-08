@@ -1,36 +1,42 @@
-let ender = [];
-ender[0] = "Donald";
-ender[1] = "Ole";
-ender[2] = "Max";
-ender[3] = "Kevin";
-ender[4] = "Alexander";
-ender[5] = "Jon";
-ender[6] = "Vladimir";
-ender[7] = "Mikkel";
-ender[8] = "Julian";
-ender[9] = "Artem";
-console.log(ender[2]);
-console.log(ender[5]);
-console.log(ender[8]);
-// a) En index er plasseringen til et element i en array.
+let arr1 = [10, 20, 30];
+console.log(arr1[1]);
 
-// b) Første index i en array er 0.
+let arr2 = [];
+arr2[0] = "hello";
+arr2[1] = "world";
+console.log(arr2);
 
-// c) Siste index i en array er array.length - 1.
+let arr3 = [1, 2, 3, 4, 5];
+console.log(arr3.length);
 
-// d) Lengden på en array viser hvor mange elementer den inneholder.
+let arr4 = ["eple", "banan", "jordbær"];
+arr4[1] = "blåbær";
+console.log(arr4);
 
-// e) Sammenhengen mellom lengde og siste index er at lengden alltid er én mer enn siste index.
+let arr5 = [5, 10, 15];
+arr5[3] = 20;
+console.log(arr5);
 
-// Når typeof brukes på en array, returnerer den "object".
+let arr6 = ["red", "green", "blue"];
+console.log(arr6[arr6.length - 1]);
 
-//For å sjekke om en variabel er en array i JavaScript, bruker man Array.isArray().
+let arr7 = [7, 14, 21];
+console.log(arr7[0] < arr7[2]);
 
-function testArray(argument) {
-  if (Array.isArray(argument)) {
-    console.log("Argumentet er en array");
-  } else {
-    console.log("Argumentet er ikke en array");
-  }
-}
+let arr8 = [2, 4, 6, 8];
+console.log(arr8[0] + arr8[2]);
+
+let arr9 = [
+  [1, 2, 3],
+  [4, 5, 6]
+];
+console.log(arr9[1][1]);
+
+let x = 100;
+let y = 200;
+let z = 300;
+
+let arr10 = [x, y, z];
+console.log(arr10);
+
 
